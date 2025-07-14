@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+
+<section class="background-radial-gradient overflow-hidden">
+    <style>
+        .background-radial-gradient {
+            background-color: hsl(218, 41%, 15%);
+            background-image: radial-gradient(650px circle at 0% 0%,
+            hsl(218, 41%, 35%) 15%,
+            hsl(218, 41%, 30%) 35%,
+            hsl(218, 41%, 20%) 75%,
+            hsl(218, 41%, 19%) 80%,
+            transparent 100%),
+            radial-gradient(1250px circle at 100% 100%,
+            hsl(218, 41%, 45%) 15%,
+            hsl(218, 41%, 30%) 35%,
+            hsl(218, 41%, 20%) 75%,
+            hsl(218, 41%, 19%) 80%,
+            transparent 100%);
+        }
+        
+        #radius-shape-1 {
+            height: 220px;
+            width: 220px;
+            top: -60px;
+            left: -130px;
+            background: radial-gradient(#44006b, #ad1fff);
+            overflow: hidden;
+        }
+        
+        #radius-shape-2 {
+            border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+            bottom: -60px;
+            right: -110px;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(#44006b, #ad1fff);
+            overflow: hidden;
+        }
+        
+        .bg-glass {
+            background-color: hsla(0, 0%, 100%, 0.9) !important;
+            backdrop-filter: saturate(200%) blur(25px);
+        }
+
+        .form-label{
+            color: black;
+            font-weight: 400;
+        }
+    </style>
+    
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+        <div class="row gx-lg-5 align-items-center my-3">
+            <div class="col-lg-5 mb-5 mb-lg-0" style="z-index: 10">
+                <img src="{% static 'img1.jpg' %}" alt="" class="img-fluid">
+               
+               
+            </div>
+            
+            <div class="col-lg-7 mb-5 mb-lg-0 position-relative">
+                <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+                <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+                
+                <div class="card bg-glass fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s">
+                    <div class="card-body px-4 py-5 px-md-5">
+                        <div data-mdb-input-init class="form-outline mb-4">
+                           <h4>User Login </h4>
+                        </div>
+                        <form class="py-3 " method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="">Email address :</label>
+                                <input type="email" id="" class="form-control" placeholder="Enter Email" name="email"/>
+                            </div>
+                            <div data-mdb-input-init class="form-outline mb-4">
+                                <label class="form-label" for="form3Example4">Password :</label>
+                                <input type="password" id="form3Example4" class="form-control" name="password" placeholder="Enter Password" />
+                            </div>
+                            <div class="form-check d-flex justify-content-center mb-4">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+                                <label class="form-check-label" for="form2Example33">
+                                    Remember me
+                                </label>
+                            </div>
+                            <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4 col-6 mx-auto d-block">
+                                Sign In
+                            </button>
+                            <div class="text-center">
+                                <p>Don't Have an Account ? <a href="{% url 'user_register' %}">sign up</a> </p>
+                                <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                </button>
+                                
+                                <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-google"></i>
+                                </button>
+                                
+                                <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                                
+                                <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-link btn-floating mx-1">
+                                    <i class="fab fa-github"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section: Design Block -->
+
+{% endblock %}

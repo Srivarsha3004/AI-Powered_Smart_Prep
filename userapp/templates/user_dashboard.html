@@ -1,0 +1,216 @@
+{% extends 'base_dashboard.html' %}
+{% load static %}   
+{% block content %}
+
+<!-- Services Start -->
+<div class="container-fluid service py-5">
+    <div class="container py-5">
+        <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="sub-style">
+                <h4 class="sub-title px-3 mb-0">Our Smart Features</h4>
+            </div>
+            <h1 class="display-3 mb-4">Find Similar Questions From Multiple PDFs</h1>
+            <p class="mb-0">
+                Use our AI tools to identify repeated, reworded, or similar questions across various uploaded PDF files.
+            </p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <!-- Question Similarity Detection -->
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item rounded">
+                    <div class="service-img rounded-top">
+                        <img src="{% static 'img/img3.avif' %}" class="img-fluid rounded-top" alt="Similarity Detection" style="height: 250px; object-fit: cover; width: 100%;">
+                    </div>
+                    <div class="service-content rounded-bottom bg-light p-4">
+                        <div class="service-content-inner">
+                            <h5 class="mb-4">
+                                <i class="fas fa-search me-3"></i>Question Similarity Detection
+                            </h5>
+                            <p class="mb-4">
+                                Automatically detect and group similar or duplicate questions across multiple PDF files.
+                            </p>
+                            <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PDF Upload and Parsing -->
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item rounded">
+                    <div class="service-img rounded-top">
+                        <img src="{% static 'img/img4.avif' %}" class="img-fluid rounded-top" alt="PDF Parsing" style="height: 250px; object-fit: cover; width: 100%;">
+                    </div>
+                    <div class="service-content rounded-bottom bg-light p-4">
+                        <div class="service-content-inner">
+                            <h5 class="mb-4">
+                                <i class="fas fa-file-upload me-3"></i>Multi-PDF Upload & Parsing
+                            </h5>
+                            <p class="mb-4">
+                                Upload multiple PDFs at once and let our system extract questions efficiently for analysis.
+                            </p>
+                            <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Text Extraction Engine -->
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item rounded">
+                    <div class="service-img rounded-top">
+                        <img src="{% static 'img/img5.avif' %}" class="img-fluid rounded-top" alt="Text Extraction" style="height: 250px; object-fit: cover; width: 100%;">
+                    </div>
+                    <div class="service-content rounded-bottom bg-light p-4">
+                        <div class="service-content-inner">
+                            <h5 class="mb-4">
+                                <i class="fas fa-file-alt me-3"></i>Text Extraction Engine
+                            </h5>
+                            <p class="mb-4">
+                                Extract questions and content from any section of your PDF using intelligent text recognition.
+                            </p>
+                            <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Keyword-Based Matching -->
+            <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="service-item rounded">
+                    <div class="service-img rounded-top">
+                        <img src="{% static 'img/img6.jpg' %}" class="img-fluid rounded-top" alt="Keyword Matching" style="height: 250px; object-fit: cover; width: 100%;">
+                    </div>
+                    <div class="service-content rounded-bottom bg-light p-4">
+                        <div class="service-content-inner">
+                            <h5 class="mb-4">
+                                <i class="fas fa-lightbulb me-3"></i>Keyword-Based Matching
+                            </h5>
+                            <p class="mb-4">
+                                Identify and cluster questions based on keyword overlap and semantic similarity.
+                            </p>
+                            <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 mb-2">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+                <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Explore More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+
+
+<!-- About Start -->
+<div class="container-fluid about bg-light py-5">
+    <div class="container py-5">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="about-img pb-5 ps-5">
+                    <img src="{% static 'img/img7.avif' %}" class="img-fluid rounded w-100" style="object-fit: cover;" alt="Image">
+                    <div class="about-experience">AI Question Similarity Detection</div>
+                </div>
+            </div>
+            <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
+                <div class="section-title text-start mb-5">
+                    <h4 class="sub-title pe-3 mb-0">About Our Project</h4>
+                    <h1 class="display-3 mb-4">Discover Similar Questions Across PDFs</h1>
+                    <p class="mb-4">
+                        Our system intelligently scans and analyzes multiple PDFs to detect similar or duplicated questions, helping users streamline content analysis and eliminate redundancy.
+                    </p>
+                    <div class="mb-4">
+                        <p class="text-secondary">
+                            <i class="fa fa-check text-primary me-2"></i>Upload multiple PDFs in one go.
+                        </p>
+                        <p class="text-secondary">
+                            <i class="fa fa-check text-primary me-2"></i>AI-powered question comparison engine.
+                        </p>
+                        <p class="text-secondary">
+                            <i class="fa fa-check text-primary me-2"></i>Group similar questions using NLP techniques.
+                        </p>
+                        <p class="text-secondary">
+                            <i class="fa fa-check text-primary me-2"></i>User-friendly and fast results display.
+                        </p>
+                    </div>
+                    <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">Discover More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+
+<!-- Feature Start -->
+<div class="container-fluid" style="padding: 80px 0; background: #f9f9f9;">
+    <div class="container" style="padding: 40px 15px;">
+        <div style="text-align: center; margin-bottom: 50px;">
+            <div style="display: inline-block; background: linear-gradient(to right, #007bff, #6610f2); padding: 10px 20px; border-radius: 30px;">
+                <h4 style="color: white; margin: 0;">Our Key Features</h4>
+            </div>
+            <h1 style="font-size: 40px; font-weight: bold; margin-top: 25px;">AI-Powered PDF Summarization & Q&A</h1>
+            <p style="font-size: 16px; color: #555;">Extract insights instantly with our AI-driven PDF summarization and interactive Q&A system.</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <!-- Feature Box Template -->
+            <div class="col-md-6 col-lg-4 col-xl-3" style="padding: 15px;">
+                <div style="background: white; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); padding: 30px; text-align: center; height: 100%;">
+                    <div style="margin-bottom: 20px;">
+                        <div style="display: inline-flex; padding: 20px; background: #f0f0f0; border-radius: 50%;">
+                            <i class="fas fa-file-alt" style="font-size: 40px; color: #007bff;"></i>
+                        </div>
+                    </div>
+                    <h5 style="font-size: 18px; font-weight: 600; margin-bottom: 15px;">Instant Summarization</h5>
+                    <p style="font-size: 14px; color: #666;">Quickly generate concise summaries from lengthy PDF documents with AI efficiency.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3" style="padding: 15px;">
+                <div style="background: white; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); padding: 30px; text-align: center; height: 100%;">
+                    <div style="margin-bottom: 20px;">
+                        <div style="display: inline-flex; padding: 20px; background: #f0f0f0; border-radius: 50%;">
+                            <i class="fas fa-question-circle" style="font-size: 40px; color: #007bff;"></i>
+                        </div>
+                    </div>
+                    <h5 style="font-size: 18px; font-weight: 600; margin-bottom: 15px;">Smart Q&A</h5>
+                    <p style="font-size: 14px; color: #666;">Ask AI-powered questions based on your PDF content and get precise answers instantly.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3" style="padding: 15px;">
+                <div style="background: white; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); padding: 30px; text-align: center; height: 100%;">
+                    <div style="margin-bottom: 20px;">
+                        <div style="display: inline-flex; padding: 20px; background: #f0f0f0; border-radius: 50%;">
+                            <i class="fas fa-lightbulb" style="font-size: 40px; color: #007bff;"></i>
+                        </div>
+                    </div>
+                    <h5 style="font-size: 18px; font-weight: 600; margin-bottom: 15px;">Key Point Extraction</h5>
+                    <p style="font-size: 14px; color: #666;">AI extracts the most important insights from PDFs, saving research time.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 col-xl-3" style="padding: 15px;">
+                <div style="background: white; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); padding: 30px; text-align: center; height: 100%;">
+                    <div style="margin-bottom: 20px;">
+                        <div style="display: inline-flex; padding: 20px; background: #f0f0f0; border-radius: 50%;">
+                            <i class="fas fa-user" style="font-size: 40px; color: #007bff;"></i>
+                        </div>
+                    </div>
+                    <h5 style="font-size: 18px; font-weight: 600; margin-bottom: 15px;">Easy to Use</h5>
+                    <p style="font-size: 14px; color: #666;">Simple and intuitive interface with fast processing and high accuracy.</p>
+                </div>
+            </div>
+
+            <!-- More Details Button -->
+            <div class="col-12 text-center" style="margin-top: 30px;">
+                <a href="#" style="background: linear-gradient(to right, #007bff, #6610f2); color: white; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: bold; font-size: 16px;">More Details</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Feature End -->
+
+
+{% endblock content %}

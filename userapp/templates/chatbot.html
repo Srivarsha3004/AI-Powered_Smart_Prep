@@ -1,0 +1,123 @@
+{% extends 'base_dashboard.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .chat-container { max-width: 100%; height: calc(100vh - 100px); margin-top: 20px; }
+    .chat-body { height: calc(100% - 120px); overflow-y: auto; }
+    .control-buttons { margin-top: 5px; }
+    .control-buttons button { margin-right: 5px; padding: 3px 8px; font-size: 0.8rem; }
+    .speak-wrapper { display: flex; flex-direction: column; align-items: flex-end; }
+    .translation-box { margin-top: 10px; }
+</style>
+
+<div class="container chat-container d-flex justify-content-center">
+    <div class="col-12 col-md-10 col-lg-8">
+        <div class="card shadow h-100 d-flex flex-column rounded-4">
+            <div class="card-header bg-primary text-white text-center fw-bold rounded-top-4">
+                Chatbot
+            </div>
+            <div class="card-body chat-body">
+                {% for conversation in conversations %}
+                    <div class="d-flex flex-column mb-2">
+                        <div class="alert alert-success align-self-start">{{ conversation.user_message }}</div>
+                        <div class="alert alert-primary align-self-end speak-wrapper">
+                            <span class="bot-response-text">{{ conversation.bot_response }}</span>
+
+                            <div class="control-buttons">
+                                <button class="btn btn-outline-primary btn-sm" onclick="startSpeaking(this)">🔊 Start</button>
+                                <button class="btn btn-outline-warning btn-sm" onclick="stopSpeaking()">⏹ Stop</button>
+                                <button class="btn btn-outline-danger btn-sm" onclick="cancelSpeaking()">❌ Close</button>
+                            </div>
+
+                            <!-- Translation Form -->
+                            <form method="post" class="translation-box d-flex flex-wrap align-items-center gap-2">
+                                {% csrf_token %}
+                                <input type="hidden" name="translate_text" value="{{ conversation.bot_response }}">
+                                {% comment %} <select name="language" class="form-select form-select-sm" required>
+                                    <option value="">Select Language</option>
+                                    <option value="hi">Hindi</option>
+                                    <option value="ta">Tamil</option>
+                                    <option value="te">Telugu</option>
+                                    <option value="ar">Arabic</option>
+                                    <option value="zh">Chinese</option>
+                                </select> {% endcomment %}
+                                {% comment %} <button type="submit" class="btn btn-sm btn-outline-success">🌍 Translate</button> {% endcomment %}
+                            </form>
+                        </div>
+                    </div>
+                {% endfor %}
+
+                {% comment %} {% if translated_text %}
+                    <div class="alert alert-info text-end mt-3"><strong>Translated:</strong> {{ translated_text }}</div>
+                {% endif %} {% endcomment %}
+            </div>
+
+            <div class="card-footer bg-light rounded-bottom-4">
+                <form method="post" class="d-flex">
+                    {% csrf_token %}
+                    <input type="text" name="message" class="form-control me-2" placeholder="Type your message..." required>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let currentUtterance = null;
+
+    function detectLanguage(text) {
+        const hindi = /[\u0900-\u097F]/;
+        const tamil = /[\u0B80-\u0BFF]/;
+        const telugu = /[\u0C00-\u0C7F]/;
+        const arabic = /[\u0600-\u06FF]/;
+        const chinese = /[\u4E00-\u9FFF]/;
+
+        if (hindi.test(text)) return 'hi-IN';
+        if (tamil.test(text)) return 'ta-IN';
+        if (telugu.test(text)) return 'te-IN';
+        if (arabic.test(text)) return 'ar-SA';
+        if (chinese.test(text)) return 'zh-CN';
+        return 'en-US';
+    }
+
+    function startSpeaking(button) {
+        stopSpeaking();
+        const text = button.closest('.speak-wrapper').querySelector('.bot-response-text').textContent.trim();
+        const lang = detectLanguage(text);
+        currentUtterance = new SpeechSynthesisUtterance(text);
+        currentUtterance.lang = lang;
+
+        const voices = speechSynthesis.getVoices();
+        const voiceMatch = voices.find(v => v.lang === lang);
+        if (voiceMatch) {
+            currentUtterance.voice = voiceMatch;
+        }
+
+        speechSynthesis.speak(currentUtterance);
+    }
+
+    function stopSpeaking() {
+        if (speechSynthesis.speaking) {
+            speechSynthesis.pause();
+        }
+    }
+
+    function cancelSpeaking() {
+        speechSynthesis.cancel();
+    }
+
+    window.speechSynthesis.onvoiceschanged = () => {
+        speechSynthesis.getVoices();
+    };
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const chatBody = document.querySelector(".chat-body");
+        chatBody.scrollTop = chatBody.scrollHeight;
+    });
+
+    document.querySelector("form").addEventListener("submit", function () {
+        this.querySelector("input").value = "";
+    });
+</script>
+{% endblock %}
