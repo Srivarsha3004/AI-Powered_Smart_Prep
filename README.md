@@ -1,7 +1,7 @@
 ## AI-Powered Smart Preparation
 This project is a Django-based web application designed to help users prepare smarter by leveraging AI technologies. Users can upload PDFs, extract and analyze questions, interact with an AI chatbot, and translate responses into multiple languages.
 
-**Key Features**
+## **Key Features**
 - User Authentication: Secure registration, login, and profile management.
 - PDF Upload & Question Extraction: Upload PDFs and automatically extract questions for further analysis.
 - AI-Based Similarity Detection: Find similar or repeated questions using external AI APIs (OpenAI/Perplexity).
