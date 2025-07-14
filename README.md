@@ -3,6 +3,7 @@ This project is a Django-based web application designed to help users prepare sm
 
 **Key Features**
 User Authentication: Secure registration, login, and profile management.
+
 PDF Upload & Question Extraction: Upload PDFs and automatically extract questions for further analysis.
 AI-Based Similarity Detection: Find similar or repeated questions using external AI APIs (OpenAI/Perplexity).
 Chatbot Integration: Interact with an AI-powered chatbot for instant answers and support.
