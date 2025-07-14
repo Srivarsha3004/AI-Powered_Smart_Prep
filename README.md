@@ -9,7 +9,7 @@ This project is a Django-based web application designed to help users prepare sm
 - Multilingual Translation: Translate chatbot responses into Hindi, Tamil, Telugu, Arabic, and Chinese.
 - Speech Synthesis: Listen to chatbot responses using built-in speech features.
 - Feedback System: Submit feedback and view feedback from other users, with sentiment analysis.
-- 
+
 ## **Technologies Used**
 - **Backend:** Python, Django, SQLite  
 - **AI & Processing:** PyPDF2, OpenAI/Perplexity API  
