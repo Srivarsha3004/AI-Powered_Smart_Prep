@@ -55,8 +55,6 @@
   
 <h2>📸 Project Outputs</h2>
 
-<h2>📸 Project Outputs</h2>
-
 <div style="display: flex; flex-wrap: wrap;">
 
   <img src="https://github.com/user-attachments/assets/4890b2bc-ac5d-407b-bcce-a27fed5b4679" alt="Output 1" width="450" style="margin-right: 10px;"/>
