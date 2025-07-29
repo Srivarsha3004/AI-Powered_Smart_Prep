@@ -55,23 +55,26 @@
   
 <h2>📸 Project Outputs</h2>
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px;">
+<h2>📸 Project Outputs</h2>
 
-  <img src="https://github.com/user-attachments/assets/4890b2bc-ac5d-407b-bcce-a27fed5b4679" alt="Output 1" width="450"/>
+<div style="display: flex; flex-wrap: wrap;">
+
+  <img src="https://github.com/user-attachments/assets/4890b2bc-ac5d-407b-bcce-a27fed5b4679" alt="Output 1" width="450" style="margin-right: 10px;"/>
   <img src="https://github.com/user-attachments/assets/f80d1f99-d566-4950-a099-28a6f6840e83" alt="Output 2" width="450"/>
 
-  <img src="https://github.com/user-attachments/assets/f1a9f794-47e7-4085-8921-d5ceb3d0fd28" alt="Output 3" width="450"/>
+  <img src="https://github.com/user-attachments/assets/f1a9f794-47e7-4085-8921-d5ceb3d0fd28" alt="Output 3" width="450" style="margin-right: 10px;"/>
   <img src="https://github.com/user-attachments/assets/5dd374e7-57ed-43cb-afb3-7af9f9f202d8" alt="Output 4" width="450"/>
 
-  <img src="https://github.com/user-attachments/assets/14b2c206-acfe-40b3-a232-602250533f74" alt="Output 5" width="450"/>
+  <img src="https://github.com/user-attachments/assets/14b2c206-acfe-40b3-a232-602250533f74" alt="Output 5" width="450" style="margin-right: 10px;"/>
   <img src="https://github.com/user-attachments/assets/c2b9a81d-d021-4503-90f6-4e768c2bc43c" alt="Output 6" width="450"/>
 
-  <img src="https://github.com/user-attachments/assets/c869e8d4-c081-4d6c-833e-c4ebea322e3b" alt="Output 7" width="450"/>
+  <img src="https://github.com/user-attachments/assets/c869e8d4-c081-4d6c-833e-c4ebea322e3b" alt="Output 7" width="450" style="margin-right: 10px;"/>
   <img src="https://github.com/user-attachments/assets/43acd146-b880-4594-a8b9-4e8ed3959e38" alt="Output 8" width="450"/>
 
   <img src="https://github.com/user-attachments/assets/318fed62-e5b0-42e4-85a7-25800092ed7c" alt="Output 9" width="450"/>
-
+  
 </div>
+
 
 
 
