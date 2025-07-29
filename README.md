@@ -23,7 +23,7 @@ This project is a Django-based web application designed to help users prepare sm
 - **User Engagement:** Feedback and chatbot features enhance user interaction and satisfaction.  
 - **Easy Deployment:** Uses SQLite for simple setup and portability.
   
-##**Project Outputs**
+## **Project Outputs**
 ![1](https://github.com/user-attachments/assets/16cd799f-e098-4eef-ac97-ffe6fcc985f1)
 ![2](https://github.com/user-attachments/assets/74293f2c-7c1b-49d2-8844-c8d65ba801ee)
 ![33](https://github.com/user-attachments/assets/2af98187-887d-4019-8d47-db572f2c0b71)
