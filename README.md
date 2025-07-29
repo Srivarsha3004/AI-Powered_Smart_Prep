@@ -56,7 +56,7 @@
   
 ## **Project Outputs**
 
-<img src="https://github.com/user-attachments/assets/0a6092e9-36b3-4228-8f18-3519f72339b1" alt="Output Image" width="200"/>
+<img src="https://github.com/user-attachments/assets/0a6092e9-36b3-4228-8f18-3519f72339b1" alt="Output Image" width="300"/>
 
 
 ![2](https://github.com/user-attachments/assets/74293f2c-7c1b-49d2-8844-c8d65ba801ee)
