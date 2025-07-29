@@ -54,7 +54,7 @@
 ---
   
 <h2>📸 Project Outputs</h2>
----
+
 <img src="https://github.com/user-attachments/assets/4890b2bc-ac5d-407b-bcce-a27fed5b4679" alt="Output 1" width="300"/>
 <img src="https://github.com/user-attachments/assets/f80d1f99-d566-4950-a099-28a6f6840e83" alt="Output 2" width="300"/>
 <img src="https://github.com/user-attachments/assets/f1a9f794-47e7-4085-8921-d5ceb3d0fd28" alt="Output 3" width="300"/>
