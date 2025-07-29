@@ -56,8 +56,7 @@
   
 ## **Project Outputs**
 
-<img src="![1](https://github.com/user-attachments/assets/0a6092e9-36b3-4228-8f18-3519f72339b1)
-" alt="Chatbot Response" width="500"/>
+<img src="![1](https://github.com/user-attachments/assets/0a6092e9-36b3-4228-8f18-3519f72339b1)width="500"/>
 
 ![2](https://github.com/user-attachments/assets/74293f2c-7c1b-49d2-8844-c8d65ba801ee)
 ![33](https://github.com/user-attachments/assets/2af98187-887d-4019-8d47-db572f2c0b71)
