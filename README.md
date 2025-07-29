@@ -54,18 +54,35 @@
 
 
   
-## **Project Outputs**
+<h2>📸 Project Outputs</h2>
 
-<img src="https://github.com/user-attachments/assets/0a6092e9-36b3-4228-8f18-3519f72339b1" alt="Output Image" width="300"/>
-<img src="https://github.com/user-attachments/assets/4890b2bc-ac5d-407b-bcce-a27fed5b4679" alt="Output 1" width="300"/>
-<img src="https://github.com/user-attachments/assets/f80d1f99-d566-4950-a099-28a6f6840e83" alt="Output 2" width="300"/>
-<img src="https://github.com/user-attachments/assets/f1a9f794-47e7-4085-8921-d5ceb3d0fd28" alt="Output 3" width="300"/>
-<img src="https://github.com/user-attachments/assets/5dd374e7-57ed-43cb-afb3-7af9f9f202d8" alt="Output 4" width="300"/>
-<img src="https://github.com/user-attachments/assets/14b2c206-acfe-40b3-a232-602250533f74" alt="Output 5" width="300"/>
-<img src="https://github.com/user-attachments/assets/c2b9a81d-d021-4503-90f6-4e768c2bc43c" alt="Output 6" width="300"/>
-<img src="https://github.com/user-attachments/assets/c869e8d4-c081-4d6c-833e-c4ebea322e3b" alt="Output 7" width="300"/>
-<img src="https://github.com/user-attachments/assets/43acd146-b880-4594-a8b9-4e8ed3959e38" alt="Output 8" width="300"/>
-<img src="https://github.com/user-attachments/assets/318fed62-e5b0-42e4-85a7-25800092ed7c" alt="Output 9" width="300"/>
+<p>🗂️ <strong>PDF Upload Interface</strong></p>
+<img src="https://github.com/user-attachments/assets/4890b2bc-ac5d-407b-bcce-a27fed5b4679" alt="PDF Upload" width="300"/>
+
+<p>📄 <strong>Extracted Questions Display</strong></p>
+<img src="https://github.com/user-attachments/assets/f80d1f99-d566-4950-a099-28a6f6840e83" alt="Extracted Questions" width="300"/>
+
+<p>🤖 <strong>Chatbot Interaction</strong></p>
+<img src="https://github.com/user-attachments/assets/f1a9f794-47e7-4085-8921-d5ceb3d0fd28" alt="Chatbot" width="300"/>
+
+<p>🌍 <strong>Multilingual Translation</strong></p>
+<img src="https://github.com/user-attachments/assets/5dd374e7-57ed-43cb-afb3-7af9f9f202d8" alt="Translation" width="300"/>
+
+<p>🔊 <strong>Speech Synthesis</strong></p>
+<img src="https://github.com/user-attachments/assets/14b2c206-acfe-40b3-a232-602250533f74" alt="Speech Output" width="300"/>
+
+<p>📝 <strong>Feedback Collection</strong></p>
+<img src="https://github.com/user-attachments/assets/c2b9a81d-d021-4503-90f6-4e768c2bc43c" alt="Feedback" width="300"/>
+
+<p>📊 <strong>Sentiment Analysis</strong></p>
+<img src="https://github.com/user-attachments/assets/c869e8d4-c081-4d6c-833e-c4ebea322e3b" alt="Sentiment Analysis" width="300"/>
+
+<p>🧑‍💼 <strong>User Profile Page</strong></p>
+<img src="https://github.com/user-attachments/assets/43acd146-b880-4594-a8b9-4e8ed3959e38" alt="Profile" width="300"/>
+
+<p>✅ <strong>Final Output Summary</strong></p>
+<img src="https://github.com/user-attachments/assets/318fed62-e5b0-42e4-85a7-25800092ed7c" alt="Final Summary" width="300"/>
+
 
 
 
